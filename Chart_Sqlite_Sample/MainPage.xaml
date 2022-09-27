@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chart_Sqlite_Sample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button  Text="Generate Chart" Clicked="GenerateHandle_Clicked" />
+            <Button Margin="0,20,0,0" Text="Insert Chart Data"  Clicked="Insert_Clicked"  />
+            <ListView x:Name="listView" Margin="40,20,40,40" Header="" HorizontalOptions="Center" VerticalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid ColumnSpacing="0"  RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0" Text="{Binding XValue}"/>
+                                <Label Grid.Column="1" Text="{Binding YValue}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid ColumnSpacing="0"  RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Text="XValue"/>
+                            <Label Grid.Column="1" Text="YValue"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
