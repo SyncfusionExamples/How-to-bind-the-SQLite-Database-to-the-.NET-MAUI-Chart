@@ -4,19 +4,18 @@
              x:Class="Chart_Sqlite_Sample.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout>
-            <Button  Text="Generate Chart" Clicked="GenerateHandle_Clicked" />
-            <Button Margin="0,20,0,0" Text="Insert Chart Data"  Clicked="Insert_Clicked"  />
-            <ListView x:Name="listView" Margin="40,20,40,40" Header="" HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout Margin="10">
+            <Button Margin="10" Text="Generate Chart" Clicked="GenerateHandle_Clicked"/>
+            <Button Margin="10" Text="Insert Chart Data" Clicked="Insert_Clicked"/>
+            <ListView x:Name="listView" Margin="20" Header="" HorizontalOptions="Center" VerticalOptions="Center">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid ColumnSpacing="0"  RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Grid ColumnSpacing="0"  RowSpacing="0" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="200" />
-                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-
                                 <Label Grid.Column="0" Text="{Binding XValue}"/>
                                 <Label Grid.Column="1" Text="{Binding YValue}"/>
                             </Grid>
@@ -25,19 +24,17 @@
                 </ListView.ItemTemplate>
                 <ListView.HeaderTemplate>
                     <DataTemplate>
-                        <Grid ColumnSpacing="0"  RowSpacing="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="200" />
-                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="100"/>
                             </Grid.ColumnDefinitions>
-
-                            <Label Grid.Column="0" Text="XValue"/>
-                            <Label Grid.Column="1" Text="YValue"/>
+                            <Label Grid.Column="0" Text="XValue" FontAttributes="Bold"/>
+                            <Label Grid.Column="1" Text="YValue" FontAttributes="Bold"/>
                         </Grid>
                     </DataTemplate>
                 </ListView.HeaderTemplate>
             </ListView>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

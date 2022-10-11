@@ -3,22 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Chart_Sqlite_Sample"
              x:Class="Chart_Sqlite_Sample.AddChartDataPage"
-             Title="AddChartDataPage">
+             Title="Add Chart data item">
     <ContentPage.BindingContext>
         <local:ChartDataModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <VerticalStackLayout Margin="20" VerticalOptions="StartAndExpand">
-            <Label Text="XValue"/>
-            <Entry Text="{Binding XValue}"/>
-
-            <Label Text="YValue"/>
-            <Entry Keyboard="Numeric" Text="{Binding YValue}"/>
-
+        <VerticalStackLayout Margin="20" Spacing="10" VerticalOptions="StartAndExpand">
+            <Label Text="XValue" FontAttributes="Bold"/>
+            <Entry Text="{Binding XValue}" FontAttributes="Bold"/>
+            <Label Text="YValue" FontAttributes="Bold"/>
+            <Entry Keyboard="Numeric" Text="{Binding YValue}" FontAttributes="Bold"/>
             <Button Text="Save" Clicked="Insert_Clicked"/>
-
             <Button Text="Delete" Clicked="Delete_Clicked"/>
-
             <Button Text="Cancel" Clicked="Cancel_Clicked"/>
         </VerticalStackLayout>
     </ContentPage.Content>

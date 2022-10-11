@@ -4,7 +4,7 @@
              xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
              xmlns:local="clr-namespace:Chart_Sqlite_Sample"
              x:Class="Chart_Sqlite_Sample.ChartSample"
-             Title="ChartSample">
+             Title="Chart">
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
