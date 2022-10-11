@@ -1,8 +1,8 @@
-# How to bind the SQLite Database to the .NET MAUI Chart
+# How to bind the SQLite Database to the .NET MAUI Chart (SfCartesianChart)
 
 This example demonstrates how to show the SQLite database data to Chart. Please refer KB link for more details,
 
-[How to bind the SQLite Database to the .NET MAUI Chart (SfChart)]()
+KB article - [How to bind the SQLite Database to the .NET MAUI Chart (SfCartesianChart)]()
 
 Let us start learning how to work with the .NET MAUI Chart using the SQLite database with the following steps:
 
@@ -118,4 +118,4 @@ public partial class ChartSample : ContentPage
 
 ```
 
-Also refer our [feature tour](https://www.syncfusion.com/maui-controls/maui-charts) page to know more features available in our charts.
+Also, refer our [feature tour](https://www.syncfusion.com/maui-controls/maui-charts) page to know more features available in our charts.
