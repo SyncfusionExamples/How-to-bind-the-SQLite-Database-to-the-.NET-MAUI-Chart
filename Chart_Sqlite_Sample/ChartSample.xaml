@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:local="clr-namespace:Chart_Sqlite_Sample"
+             x:Class="Chart_Sqlite_Sample.ChartSample"
+             Title="Chart">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+
+    <chart:SfCartesianChart>
+        <chart:SfCartesianChart.Title>
+            <Label
+                Margin="10"
+                HorizontalOptions="Center"
+                Text="Chart SQLite Database"/>
+        </chart:SfCartesianChart.Title>
+
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis/>
+        </chart:SfCartesianChart.XAxes>
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis/>
+        </chart:SfCartesianChart.YAxes>
+        <chart:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="XValue" YBindingPath="YValue"/>
+    </chart:SfCartesianChart>
+</ContentPage>
