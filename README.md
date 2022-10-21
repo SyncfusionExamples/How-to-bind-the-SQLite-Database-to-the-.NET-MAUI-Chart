@@ -118,4 +118,20 @@ public partial class ChartSample : ContentPage
 
 ```
 
+![Displaying the database data in a ListView](https://user-images.githubusercontent.com/53489303/197131224-9da3e363-ca14-4cf5-a359-c90ff6dc4f69.png)
+
+_**Initial page to display the SQLite database data**_
+
+![Inserting an data item in the database](https://user-images.githubusercontent.com/53489303/197131461-ebfada13-b9ae-49c6-a32e-3ebcb2c29d7d.png)
+
+_**Inserting an item into the database**_
+
+![Output after inserting a data into the database](https://user-images.githubusercontent.com/53489303/197131501-f2686a7c-a336-4237-a9b3-3253e047d66e.png)
+
+_**After inserting data into the database**_
+
+![Chart output based on the database data](https://user-images.githubusercontent.com/53489303/197131581-06882f9b-8f5c-4e2c-af5b-f88da28e0c2e.png)
+
+_**Display the chart with generated data**_
+
 Also, refer our [feature tour](https://www.syncfusion.com/maui-controls/maui-charts) page to know more features available in our charts.
